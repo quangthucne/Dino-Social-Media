@@ -34,7 +34,7 @@ export function Sidebar() {
             }`}
           >
             <div className="w-9 h-9 flex items-center justify-center">
-              <item.icon className="w-6 h-6 text-primary" />
+              <item.icon className="w-6 h-6 text-[#FF5722] " />
             </div>
             <span className="font-medium">{item.label}</span>
           </Button>

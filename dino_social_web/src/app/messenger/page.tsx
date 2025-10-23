@@ -16,7 +16,6 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Header } from "@/components/header";
 
 export default function MessengerPage() {
   const [selectedChat, setSelectedChat] = useState(0);
@@ -74,8 +73,7 @@ export default function MessengerPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <div className="flex pt-14 h-screen">
+      <div className="flex h-screen">
         {/* Conversations list */}
         <div className="w-80 border-r bg-card flex flex-col">
           <div className="p-4 border-b">

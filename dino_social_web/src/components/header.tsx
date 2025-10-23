@@ -21,6 +21,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logo from "@/assets/dino-logo.png";
 
 export function Header() {
   const pathname = usePathname();
@@ -40,9 +41,13 @@ export function Header() {
         <div className="flex items-center gap-2 flex-1">
           <Link
             href="/"
-            className="w-10 h-10 rounded-full bg-[#FF5722] flex items-center justify-center text-white font-bold text-xl"
+            className="w-10 h-10 flex items-center justify-center text-white font-bold text-xl"
           >
-            Dino
+            <img
+              src={logo.src}
+              alt="Dino Social Logo"
+              className="size-full rounded-full"
+            />
           </Link>
           <div className="relative hidden sm:block">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -61,12 +66,12 @@ export function Header() {
                 variant="ghost"
                 size="icon"
                 className={`relative h-12 w-20 rounded-lg hover:bg-fb-hover ${
-                  pathname === item.href ? "text-primary" : ""
+                  pathname === item.href ? "text-[#FF5722]" : ""
                 }`}
               >
                 <item.icon className="w-20 h-20" />
                 {pathname === item.href && (
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary rounded-t" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#FF5722] rounded-t" />
                 )}
               </Button>
             </Link>
@@ -141,12 +146,24 @@ export function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="ghost" size="icon" className="rounded-full">
-            <Avatar className="w-8 h-8">
-              <AvatarImage src="https://picsum.photos/seed/myavatar/100/100" />
-              <AvatarFallback>QT</AvatarFallback>
-            </Avatar>
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <Avatar className="w-8 h-8">
+                  <AvatarImage src="https://picsum.photos/seed/myavatar/100/100" />
+                  <AvatarFallback>QT</AvatarFallback>
+                </Avatar>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem asChild>
+                <Link href="/profile">Hồ sơ</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/auth/login">Đăng xuất</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </header>

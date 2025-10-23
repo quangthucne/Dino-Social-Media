@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import { Sidebar } from "@/components/sidebar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -53,8 +52,7 @@ export default function GroupsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <div className="flex pt-14">
+      <div className="flex">
         <Sidebar />
 
         <main className="flex-1 lg:ml-80 p-4">
