@@ -19,30 +19,30 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		01CD338AFFBD44FFE46C889146E13F94 /* FLTImagePickerMetaDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A3283D6C2619E09AEB9EC916CE938E76 /* FLTImagePickerMetaDataUtil.m */; };
-		022C23F1E61018961E323F39E5C156E3 /* FLTImagePickerPhotoAssetUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C2488740DF10F19A00253FCFBDFE1CC1 /* FLTImagePickerPhotoAssetUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F397B25797647C55BAB87120F8F02D3 /* FLTImagePickerImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8633EE43FC771F794461A9956B09AAA4 /* FLTImagePickerImageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		222AC4BF833FA50116ED9CBA3B83C9DB /* FLTImagePickerImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3291DD015E6473F6455EC2ACBB97D857 /* FLTImagePickerImageUtil.m */; };
-		2810C57DC5EDF5DF9350B71CEF172EAC /* FLTImagePickerPhotoAssetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1D3350D63A15370B9B2E0F0025FC0 /* FLTImagePickerPhotoAssetUtil.m */; };
+		01CD338AFFBD44FFE46C889146E13F94 /* FLTImagePickerMetaDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A43E5014595DB816CEBD92B5380C7F /* FLTImagePickerMetaDataUtil.m */; };
+		022C23F1E61018961E323F39E5C156E3 /* FLTImagePickerPhotoAssetUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 05EECE10936AC6602E132C678EA4BEE6 /* FLTImagePickerPhotoAssetUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F397B25797647C55BAB87120F8F02D3 /* FLTImagePickerImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E19C7CE688E185F072C0DCEBD8AEA056 /* FLTImagePickerImageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222AC4BF833FA50116ED9CBA3B83C9DB /* FLTImagePickerImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C5C63E22B7AA8C19977FC522F21129 /* FLTImagePickerImageUtil.m */; };
+		2810C57DC5EDF5DF9350B71CEF172EAC /* FLTImagePickerPhotoAssetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9D5C7A1A373C363C7F6B5BE432AD6 /* FLTImagePickerPhotoAssetUtil.m */; };
 		2B5B0F628F0FE3CD032B8CA1FA3A9902 /* image_picker_ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 471CC5AD3BC9FBD9E8EE37ED385D9F89 /* image_picker_ios-dummy.m */; };
 		3F197F4F335A992690C00BE47D82C02E /* image_picker_ios-image_picker_ios_privacy in Resources */ = {isa = PBXBuildFile; fileRef = F0C7EFBFF01CFAAB52BA74E6CB40CE2C /* image_picker_ios-image_picker_ios_privacy */; };
-		57906E3DFBFA025535DE20B544E88CEE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D0D7CA5BA10EEF9601808E303C1E67BC /* PrivacyInfo.xcprivacy */; };
-		7187035DE343D15C1E18DD0B4D58F09D /* image_picker_ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3CDC5BE6B054004839B155123BD2EA /* image_picker_ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57906E3DFBFA025535DE20B544E88CEE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8AB46EB3901AC0EBCC0DE0EC086A525A /* PrivacyInfo.xcprivacy */; };
+		7187035DE343D15C1E18DD0B4D58F09D /* image_picker_ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C94BA3C15223DF6E89390E2F6FAF9C57 /* image_picker_ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ABE471529580AFD720CA76711E5637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		7A50EECBB5F23A2B2E2F0FB1627D661A /* FLTPHPickerSaveImageToPathOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FB151DB499E5645ED68E7C15A0C5F6EF /* FLTPHPickerSaveImageToPathOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8153FAC69CE55CC686FFBB0FE3746A64 /* messages.g.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A425542D0633885395F1871AA587DA0 /* messages.g.m */; };
-		90EE2BFF038373FA1BB41486FF181F93 /* FLTImagePickerMetaDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F3450B91B42E7836901D3E253E4135 /* FLTImagePickerMetaDataUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A50EECBB5F23A2B2E2F0FB1627D661A /* FLTPHPickerSaveImageToPathOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E351DC4B1D75C8564B55171EFA350D /* FLTPHPickerSaveImageToPathOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8153FAC69CE55CC686FFBB0FE3746A64 /* messages.g.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEB128FC589246FF0E27C27970E6B3A /* messages.g.m */; };
+		90EE2BFF038373FA1BB41486FF181F93 /* FLTImagePickerMetaDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B4FBF4FFA3D7493AEC8DD5FDE6C470D9 /* FLTImagePickerMetaDataUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B6231076291689D62916A399CEEE305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		B375EA128E6579366091BAA390BBDD34 /* Pods-RunnerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DB54C128E3D88C0C9C7DDEA475ED7 /* Pods-RunnerTests-dummy.m */; };
 		CD150A94F9298C98DEC9090A86EF2CA7 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 499E3722E8DACDC2AAA6C15AD1796520 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEBD84922D2CCEF26C272418EC3EB3A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		DABA1D133F168099ED415D88CF078E9B /* FLTImagePickerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AE41020865FACA2127CD649ACDC35FCF /* FLTImagePickerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1C7666B701E23B0EC566B874C20B13C /* FLTPHPickerSaveImageToPathOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD8A8986C37EF0D1516A526855B0650 /* FLTPHPickerSaveImageToPathOperation.m */; };
+		DABA1D133F168099ED415D88CF078E9B /* FLTImagePickerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F28E660822CDBE595CB6E56ACE62B967 /* FLTImagePickerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1C7666B701E23B0EC566B874C20B13C /* FLTPHPickerSaveImageToPathOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EDF3F45FB2812BE9CD221274F602 /* FLTPHPickerSaveImageToPathOperation.m */; };
 		E1F4406270F49A5BBFB01CED455EED92 /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E794494AB90477BA94C681E994ADF341 /* Pods-Runner-dummy.m */; };
-		E654C7925C1DE3968EBE02F363FC491E /* FLTImagePickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B94D68023A7FF2D7CD7E1DBB51A00C45 /* FLTImagePickerPlugin.m */; };
-		EA3FACDA9BF8A6824AD12B35E5BA851A /* messages.g.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BD4B6CE1FFF220FB43307DB6CED163 /* messages.g.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E654C7925C1DE3968EBE02F363FC491E /* FLTImagePickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FE2794A93D1346D59F8BCE0A0EE101 /* FLTImagePickerPlugin.m */; };
+		EA3FACDA9BF8A6824AD12B35E5BA851A /* messages.g.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC9C62834E432CF6D8E61AB90AC2447 /* messages.g.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2DC96CDCF638AB89007D2DB0F3119A /* Pods-RunnerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9B12BCE5540D02A80250C3EC16D399 /* Pods-RunnerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE39DCD0B607D1137F59C0EF8EBA7D7E /* FLTImagePickerPlugin_Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 860E784004A1F9779049E8F31308BCAD /* FLTImagePickerPlugin_Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE39DCD0B607D1137F59C0EF8EBA7D7E /* FLTImagePickerPlugin_Test.h in Headers */ = {isa = PBXBuildFile; fileRef = B579461BDBDDBFA7E3425DF0BDF20977 /* FLTImagePickerPlugin_Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,12 +86,11 @@
 /* Begin PBXFileReference section */
 		03E8AD2E8B75443E12D3D3BD12A9900E /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		05914F277EB2D12C9D272EE81AC85F35 /* image_picker_ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "image_picker_ios-prefix.pch"; sourceTree = "<group>"; };
-		09F1D3350D63A15370B9B2E0F0025FC0 /* FLTImagePickerPhotoAssetUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPhotoAssetUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerPhotoAssetUtil.m"; sourceTree = "<group>"; };
+		05EECE10936AC6602E132C678EA4BEE6 /* FLTImagePickerPhotoAssetUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPhotoAssetUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPhotoAssetUtil.h"; sourceTree = "<group>"; };
 		0AFB643DA4919253F749E2836A5AAFDC /* Pods-Runner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-Info.plist"; sourceTree = "<group>"; };
 		11AA7018F95317D959D9D2E76CBB2377 /* Pods-RunnerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RunnerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1B136F41D5B5FAE96EA576E768A5771D /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B532598FD93E928328AE620562D0410 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/LICENSE"; sourceTree = "<group>"; };
-		3291DD015E6473F6455EC2ACBB97D857 /* FLTImagePickerImageUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerImageUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerImageUtil.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		471CC5AD3BC9FBD9E8EE37ED385D9F89 /* image_picker_ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "image_picker_ios-dummy.m"; sourceTree = "<group>"; };
 		478F08944CACD03938C636685D40ADC3 /* ImagePickerPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = ImagePickerPlugin.modulemap; path = "../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/ImagePickerPlugin.modulemap"; sourceTree = "<group>"; };
@@ -106,37 +105,38 @@
 		790366A99D90B8170678722C1672A0A6 /* image_picker_ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = image_picker_ios.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		79F83F4D505FA40C1CD18A8029181D59 /* Pods-RunnerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RunnerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		83F835ADF0A07B89FCD2506C75935D28 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		860E784004A1F9779049E8F31308BCAD /* FLTImagePickerPlugin_Test.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin_Test.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPlugin_Test.h"; sourceTree = "<group>"; };
-		8633EE43FC771F794461A9956B09AAA4 /* FLTImagePickerImageUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerImageUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerImageUtil.h"; sourceTree = "<group>"; };
-		8A425542D0633885395F1871AA587DA0 /* messages.g.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = messages.g.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/messages.g.m"; sourceTree = "<group>"; };
+		8AB46EB3901AC0EBCC0DE0EC086A525A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		94B9D5C7A1A373C363C7F6B5BE432AD6 /* FLTImagePickerPhotoAssetUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPhotoAssetUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerPhotoAssetUtil.m"; sourceTree = "<group>"; };
 		96AD24A8E76E090130CCEB8854D1CC35 /* ResourceBundle-image_picker_ios_privacy-image_picker_ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-image_picker_ios_privacy-image_picker_ios-Info.plist"; sourceTree = "<group>"; };
 		999565C30AF66A775F16ED1EC95BFAE2 /* image_picker_ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "image_picker_ios-Info.plist"; sourceTree = "<group>"; };
+		9AD7EDF3F45FB2812BE9CD221274F602 /* FLTPHPickerSaveImageToPathOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPHPickerSaveImageToPathOperation.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTPHPickerSaveImageToPathOperation.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9B12BCE5540D02A80250C3EC16D399 /* Pods-RunnerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RunnerTests-umbrella.h"; sourceTree = "<group>"; };
+		9EC9C62834E432CF6D8E61AB90AC2447 /* messages.g.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages.g.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/messages.g.h"; sourceTree = "<group>"; };
 		9F372488496E0CB9A264304370F0BB36 /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
-		A1BD4B6CE1FFF220FB43307DB6CED163 /* messages.g.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages.g.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/messages.g.h"; sourceTree = "<group>"; };
-		A3283D6C2619E09AEB9EC916CE938E76 /* FLTImagePickerMetaDataUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerMetaDataUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerMetaDataUtil.m"; sourceTree = "<group>"; };
+		A3A43E5014595DB816CEBD92B5380C7F /* FLTImagePickerMetaDataUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerMetaDataUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerMetaDataUtil.m"; sourceTree = "<group>"; };
 		AC8FE152530FBDCE460186B326C1A8FB /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
-		AE41020865FACA2127CD649ACDC35FCF /* FLTImagePickerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPlugin.h"; sourceTree = "<group>"; };
 		AF27ED5FAAB686BC54CBC1DFA3BBE358 /* image_picker_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker_ios.release.xcconfig; sourceTree = "<group>"; };
 		B00A5ECAED4CA0C16FF7C65365BC0334 /* Pods-RunnerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RunnerTests-Info.plist"; sourceTree = "<group>"; };
 		B0BD57AB3672E53828D11C2A3368023A /* Pods-RunnerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RunnerTests.modulemap"; sourceTree = "<group>"; };
 		B1BFA0F7EC2B1C5957837B99DC28097D /* image_picker_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker_ios.debug.xcconfig; sourceTree = "<group>"; };
+		B4FBF4FFA3D7493AEC8DD5FDE6C470D9 /* FLTImagePickerMetaDataUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerMetaDataUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerMetaDataUtil.h"; sourceTree = "<group>"; };
+		B579461BDBDDBFA7E3425DF0BDF20977 /* FLTImagePickerPlugin_Test.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin_Test.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPlugin_Test.h"; sourceTree = "<group>"; };
+		B6FE2794A93D1346D59F8BCE0A0EE101 /* FLTImagePickerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPlugin.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerPlugin.m"; sourceTree = "<group>"; };
 		B703785507B22BAF0B800737429577EC /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
-		B94D68023A7FF2D7CD7E1DBB51A00C45 /* FLTImagePickerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPlugin.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerPlugin.m"; sourceTree = "<group>"; };
-		BAD8A8986C37EF0D1516A526855B0650 /* FLTPHPickerSaveImageToPathOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPHPickerSaveImageToPathOperation.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTPHPickerSaveImageToPathOperation.m"; sourceTree = "<group>"; };
-		C2488740DF10F19A00253FCFBDFE1CC1 /* FLTImagePickerPhotoAssetUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPhotoAssetUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPhotoAssetUtil.h"; sourceTree = "<group>"; };
 		C24C1A035F22D24883C6F1876F274C6F /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
 		C50FD10CD19FF6999637BA5ECAF1681B /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
-		D0D7CA5BA10EEF9601808E303C1E67BC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
-		DA3CDC5BE6B054004839B155123BD2EA /* image_picker_ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "image_picker_ios-umbrella.h"; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios-umbrella.h"; sourceTree = "<group>"; };
+		C8C5C63E22B7AA8C19977FC522F21129 /* FLTImagePickerImageUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerImageUtil.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/FLTImagePickerImageUtil.m"; sourceTree = "<group>"; };
+		C94BA3C15223DF6E89390E2F6FAF9C57 /* image_picker_ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "image_picker_ios-umbrella.h"; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios-umbrella.h"; sourceTree = "<group>"; };
+		E19C7CE688E185F072C0DCEBD8AEA056 /* FLTImagePickerImageUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerImageUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerImageUtil.h"; sourceTree = "<group>"; };
+		E1E351DC4B1D75C8564B55171EFA350D /* FLTPHPickerSaveImageToPathOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPHPickerSaveImageToPathOperation.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTPHPickerSaveImageToPathOperation.h"; sourceTree = "<group>"; };
 		E736E0C9C5B73D27B8865E363E2108AC /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
 		E794494AB90477BA94C681E994ADF341 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
 		EA825C27B344FEAE4FDB75151352B17F /* image_picker_ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = image_picker_ios.modulemap; sourceTree = "<group>"; };
 		ECDF6AA713870989438BA93B395DC557 /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F0C7EFBFF01CFAAB52BA74E6CB40CE2C /* image_picker_ios-image_picker_ios_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "image_picker_ios-image_picker_ios_privacy"; path = image_picker_ios_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7F3450B91B42E7836901D3E253E4135 /* FLTImagePickerMetaDataUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerMetaDataUtil.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerMetaDataUtil.h"; sourceTree = "<group>"; };
-		FB151DB499E5645ED68E7C15A0C5F6EF /* FLTPHPickerSaveImageToPathOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPHPickerSaveImageToPathOperation.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTPHPickerSaveImageToPathOperation.h"; sourceTree = "<group>"; };
+		F28E660822CDBE595CB6E56ACE62B967 /* FLTImagePickerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/include/image_picker_ios/FLTImagePickerPlugin.h"; sourceTree = "<group>"; };
+		FFEB128FC589246FF0E27C27970E6B3A /* messages.g.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = messages.g.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources/image_picker_ios/messages.g.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,22 +174,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D519971EFCF3B6DE00758E0FF0CCA6E /* AndroidStudioProjects */ = {
+		1D7F3036DAF59449D415092657DAF82E /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				F0418B9F3F4BFB74292DFC727071B92E /* FluterProject */,
+				452371F47C447FA44CBDBB8765144E1B /* .symlinks */,
 			);
-			name = AndroidStudioProjects;
-			path = AndroidStudioProjects;
-			sourceTree = "<group>";
-		};
-		16708BB7F7C2B664E5AC9931224F6EF7 /* .symlinks */ = {
-			isa = PBXGroup;
-			children = (
-				FF348A25107A45A09AEE1A3E4F01156A /* plugins */,
-			);
-			name = .symlinks;
-			path = .symlinks;
+			name = ios;
+			path = ios;
 			sourceTree = "<group>";
 		};
 		1F648A9ADAC382247BFE3DF35F800779 /* Pod */ = {
@@ -202,13 +193,13 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		25D512C52B28AC15853F0BA3E6D585C3 /* ios */ = {
+		2A78607F5C1A06B6FB9BB9C440571B1A /* image_picker_ios */ = {
 			isa = PBXGroup;
 			children = (
-				54FE55A064DFC6B2153B8A56C38742F7 /* .symlinks */,
+				7B4201194B847A508271B57303FC48E8 /* Resources */,
 			);
-			name = ios;
-			path = ios;
+			name = image_picker_ios;
+			path = image_picker_ios;
 			sourceTree = "<group>";
 		};
 		2B09418A54E208B2009FC1CA20AEB6B9 /* Products */ = {
@@ -220,6 +211,21 @@
 				6C3345B1B3CAEDF5B03B1F731FDC492E /* Pods-RunnerTests */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA70A6D17E6C1D6251046C71F0E1829 /* image_picker_ios */ = {
+			isa = PBXGroup;
+			children = (
+				C8C5C63E22B7AA8C19977FC522F21129 /* FLTImagePickerImageUtil.m */,
+				A3A43E5014595DB816CEBD92B5380C7F /* FLTImagePickerMetaDataUtil.m */,
+				94B9D5C7A1A373C363C7F6B5BE432AD6 /* FLTImagePickerPhotoAssetUtil.m */,
+				B6FE2794A93D1346D59F8BCE0A0EE101 /* FLTImagePickerPlugin.m */,
+				9AD7EDF3F45FB2812BE9CD221274F602 /* FLTPHPickerSaveImageToPathOperation.m */,
+				FFEB128FC589246FF0E27C27970E6B3A /* messages.g.m */,
+				30A69B630989D0A79DE943965832E55F /* include */,
+			);
+			name = image_picker_ios;
+			path = image_picker_ios;
 			sourceTree = "<group>";
 		};
 		2DB8426A477BA92773F00012EBA84D53 /* Targets Support Files */ = {
@@ -240,6 +246,25 @@
 			path = "../../../../../../../../.pub-cache/hosted/pub.dev/image_picker_ios-0.8.13/ios/image_picker_ios/Sources";
 			sourceTree = "<group>";
 		};
+		301EF2A7FA659E77D319C5C7C4B4B874 /* image_picker_ios */ = {
+			isa = PBXGroup;
+			children = (
+				D1AE094914D6F2F9D13C37F0106552AD /* ios */,
+			);
+			name = image_picker_ios;
+			path = image_picker_ios;
+			sourceTree = "<group>";
+		};
+		30A69B630989D0A79DE943965832E55F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C94BA3C15223DF6E89390E2F6FAF9C57 /* image_picker_ios-umbrella.h */,
+				97A2754B0BA6906390F3E0FE1066A291 /* image_picker_ios */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
 		36456FCE622780AB1D1191E3997EF545 /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,15 +273,6 @@
 			);
 			name = Flutter;
 			path = ../Flutter;
-			sourceTree = "<group>";
-		};
-		365C26F2A1E0E3604A12D3C260564A5C /* DinoSocialApp */ = {
-			isa = PBXGroup;
-			children = (
-				25D512C52B28AC15853F0BA3E6D585C3 /* ios */,
-			);
-			name = DinoSocialApp;
-			path = DinoSocialApp;
 			sourceTree = "<group>";
 		};
 		37590730AF7BB86827C317233DE1C61E /* .. */ = {
@@ -271,44 +287,19 @@
 		40053A96DA351EEA655C4E121EDA89B2 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				53069A4295E54E399ABCD7014F9EA893 /* .. */,
+				F598F413536C9940467BB816F356E6ED /* .. */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		480E736A9FE58C6A91F633E68BC1AABA /* image_picker_ios */ = {
+		452371F47C447FA44CBDBB8765144E1B /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
-				3291DD015E6473F6455EC2ACBB97D857 /* FLTImagePickerImageUtil.m */,
-				A3283D6C2619E09AEB9EC916CE938E76 /* FLTImagePickerMetaDataUtil.m */,
-				09F1D3350D63A15370B9B2E0F0025FC0 /* FLTImagePickerPhotoAssetUtil.m */,
-				B94D68023A7FF2D7CD7E1DBB51A00C45 /* FLTImagePickerPlugin.m */,
-				BAD8A8986C37EF0D1516A526855B0650 /* FLTPHPickerSaveImageToPathOperation.m */,
-				8A425542D0633885395F1871AA587DA0 /* messages.g.m */,
-				88E349A20BA88C7B8722EF639FFF1AEE /* include */,
+				A16CDEB6D84378DE69B7AC1495EB9F25 /* plugins */,
 			);
-			name = image_picker_ios;
-			path = image_picker_ios;
-			sourceTree = "<group>";
-		};
-		506C6D1218A36ADEFB60F7C30AA82223 /* image_picker_ios */ = {
-			isa = PBXGroup;
-			children = (
-				C3D8FE93FEC3A2831F6B61E2C2A29001 /* Resources */,
-			);
-			name = image_picker_ios;
-			path = image_picker_ios;
-			sourceTree = "<group>";
-		};
-		53069A4295E54E399ABCD7014F9EA893 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				DFFAAE9F9EB2628E07B7916D40D5F45F /* .. */,
-				E1ED665F20E703AA23ED4B16A25D4CFD /* AndroidStudioProjects */,
-			);
-			name = ..;
-			path = ..;
+			name = .symlinks;
+			path = .symlinks;
 			sourceTree = "<group>";
 		};
 		537E840C4F4E30B706FD9D64B15C53A7 /* Pods-RunnerTests */ = {
@@ -328,40 +319,13 @@
 			path = "Target Support Files/Pods-RunnerTests";
 			sourceTree = "<group>";
 		};
-		54C0AB432FEE68491601FB48A4C4F24C /* ios */ = {
+		580ABF019AA5889853E3AB90BD819330 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				16708BB7F7C2B664E5AC9931224F6EF7 /* .symlinks */,
+				CA4668203C9955AF27F09D65507F9F7D /* Dino-Social-Media */,
 			);
-			name = ios;
-			path = ios;
-			sourceTree = "<group>";
-		};
-		54FE55A064DFC6B2153B8A56C38742F7 /* .symlinks */ = {
-			isa = PBXGroup;
-			children = (
-				57042F4BD6F66A00A2B049EC6D3BF8C8 /* plugins */,
-			);
-			name = .symlinks;
-			path = .symlinks;
-			sourceTree = "<group>";
-		};
-		55E87686828770B926FD43516AF2E03E /* image_picker_ios */ = {
-			isa = PBXGroup;
-			children = (
-				774B95983E6F8B4B826EE38BC2492034 /* ios */,
-			);
-			name = image_picker_ios;
-			path = image_picker_ios;
-			sourceTree = "<group>";
-		};
-		57042F4BD6F66A00A2B049EC6D3BF8C8 /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				C68F4C406AAB9DB5A6BFD950F0F20991 /* image_picker_ios */,
-			);
-			name = plugins;
-			path = plugins;
+			name = GitHub;
+			path = GitHub;
 			sourceTree = "<group>";
 		};
 		5A768288A88DF21DF67D0B6524496DBE /* .. */ = {
@@ -373,6 +337,15 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		622673361E43D2E0E1789B24720DFFDF /* DinoSocialApp */ = {
+			isa = PBXGroup;
+			children = (
+				1D7F3036DAF59449D415092657DAF82E /* ios */,
+			);
+			name = DinoSocialApp;
+			path = DinoSocialApp;
+			sourceTree = "<group>";
+		};
 		680213687DE12388621AE76AB42944CA /* .. */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,15 +353,6 @@
 			);
 			name = ..;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		6CE322A1C838E7996BF26ABFA6ADFF9F /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				506C6D1218A36ADEFB60F7C30AA82223 /* image_picker_ios */,
-			);
-			name = Sources;
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		6DB132DA5EEC6DDF2176E4DBD8049E90 /* Development Pods */ = {
@@ -400,24 +364,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		774B95983E6F8B4B826EE38BC2492034 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				AC3148EEFEF13578E3B28CBAF2BA604E /* image_picker_ios */,
-			);
-			name = ios;
-			path = ios;
-			sourceTree = "<group>";
-		};
-		7881596ED50B0B0EB4651CCB61C9DEB9 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				480E736A9FE58C6A91F633E68BC1AABA /* image_picker_ios */,
-			);
-			name = Sources;
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		79431FCDBC29A60FB00F1728344A00C6 /* .. */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,65 +373,100 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		88E349A20BA88C7B8722EF639FFF1AEE /* include */ = {
+		7B4201194B847A508271B57303FC48E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA3CDC5BE6B054004839B155123BD2EA /* image_picker_ios-umbrella.h */,
-				ACE2BD0D264A87C7191C6C2CFC10686E /* image_picker_ios */,
+				8AB46EB3901AC0EBCC0DE0EC086A525A /* PrivacyInfo.xcprivacy */,
 			);
-			name = include;
-			path = include;
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		90BE701C8CC3EAE1D540D0BAEE830FF9 /* ios */ = {
+		8761E9B7BE9547F0E90938861AEBFFC5 /* image_picker_ios */ = {
 			isa = PBXGroup;
 			children = (
-				DFA85F10CDE5222CFE68344994E55908 /* image_picker_ios */,
+				F3AF37D6360329FB8B7D06435CDF11EE /* Sources */,
+			);
+			name = image_picker_ios;
+			path = image_picker_ios;
+			sourceTree = "<group>";
+		};
+		88F53A08627E265F24B1603E522C3CDE /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				580ABF019AA5889853E3AB90BD819330 /* GitHub */,
+			);
+			name = ..;
+			path = .;
+			sourceTree = "<group>";
+		};
+		97A2754B0BA6906390F3E0FE1066A291 /* image_picker_ios */ = {
+			isa = PBXGroup;
+			children = (
+				E19C7CE688E185F072C0DCEBD8AEA056 /* FLTImagePickerImageUtil.h */,
+				B4FBF4FFA3D7493AEC8DD5FDE6C470D9 /* FLTImagePickerMetaDataUtil.h */,
+				05EECE10936AC6602E132C678EA4BEE6 /* FLTImagePickerPhotoAssetUtil.h */,
+				F28E660822CDBE595CB6E56ACE62B967 /* FLTImagePickerPlugin.h */,
+				B579461BDBDDBFA7E3425DF0BDF20977 /* FLTImagePickerPlugin_Test.h */,
+				E1E351DC4B1D75C8564B55171EFA350D /* FLTPHPickerSaveImageToPathOperation.h */,
+				9EC9C62834E432CF6D8E61AB90AC2447 /* messages.g.h */,
+			);
+			name = image_picker_ios;
+			path = image_picker_ios;
+			sourceTree = "<group>";
+		};
+		A16CDEB6D84378DE69B7AC1495EB9F25 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BB52AF086A9F50A3C55D08436A948DC5 /* image_picker_ios */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		A2B30D74406C2FCD936F66BAE0257CD1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A78607F5C1A06B6FB9BB9C440571B1A /* image_picker_ios */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B2589103B7B09DDB8D7063757E8F689F /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				8761E9B7BE9547F0E90938861AEBFFC5 /* image_picker_ios */,
 			);
 			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
-		AC3148EEFEF13578E3B28CBAF2BA604E /* image_picker_ios */ = {
+		BB52AF086A9F50A3C55D08436A948DC5 /* image_picker_ios */ = {
 			isa = PBXGroup;
 			children = (
-				6CE322A1C838E7996BF26ABFA6ADFF9F /* Sources */,
+				B2589103B7B09DDB8D7063757E8F689F /* ios */,
 			);
 			name = image_picker_ios;
 			path = image_picker_ios;
 			sourceTree = "<group>";
 		};
-		ACE2BD0D264A87C7191C6C2CFC10686E /* image_picker_ios */ = {
+		BFD39BF7BCD0A86F68D1477E2A439FFE /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
-				8633EE43FC771F794461A9956B09AAA4 /* FLTImagePickerImageUtil.h */,
-				F7F3450B91B42E7836901D3E253E4135 /* FLTImagePickerMetaDataUtil.h */,
-				C2488740DF10F19A00253FCFBDFE1CC1 /* FLTImagePickerPhotoAssetUtil.h */,
-				AE41020865FACA2127CD649ACDC35FCF /* FLTImagePickerPlugin.h */,
-				860E784004A1F9779049E8F31308BCAD /* FLTImagePickerPlugin_Test.h */,
-				FB151DB499E5645ED68E7C15A0C5F6EF /* FLTPHPickerSaveImageToPathOperation.h */,
-				A1BD4B6CE1FFF220FB43307DB6CED163 /* messages.g.h */,
+				F1B1027389C1887403E68787279DE87D /* plugins */,
 			);
-			name = image_picker_ios;
-			path = image_picker_ios;
+			name = .symlinks;
+			path = .symlinks;
 			sourceTree = "<group>";
 		};
-		BD4CC8104A26D21FAC19B2F47F125C75 /* FluterProject */ = {
+		C110DE72DCF52A3D71443520C366135D /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				365C26F2A1E0E3604A12D3C260564A5C /* DinoSocialApp */,
+				BFD39BF7BCD0A86F68D1477E2A439FFE /* .symlinks */,
 			);
-			name = FluterProject;
-			path = FluterProject;
-			sourceTree = "<group>";
-		};
-		C3D8FE93FEC3A2831F6B61E2C2A29001 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D0D7CA5BA10EEF9601808E303C1E67BC /* PrivacyInfo.xcprivacy */,
-			);
-			name = Resources;
-			path = Resources;
+			name = ios;
+			path = ios;
 			sourceTree = "<group>";
 		};
 		C57DE1A98F281A5A49D135EC99A8ABD1 /* Pod */ = {
@@ -496,13 +477,22 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		C68F4C406AAB9DB5A6BFD950F0F20991 /* image_picker_ios */ = {
+		CA4668203C9955AF27F09D65507F9F7D /* Dino-Social-Media */ = {
 			isa = PBXGroup;
 			children = (
-				90BE701C8CC3EAE1D540D0BAEE830FF9 /* ios */,
+				F72D2AB9723DDF9192912AC4C75B2148 /* DinoSocialApp */,
 			);
-			name = image_picker_ios;
-			path = image_picker_ios;
+			name = "Dino-Social-Media";
+			path = "Dino-Social-Media";
+			sourceTree = "<group>";
+		};
+		CADEE4AA2BB3E6B3D7761A07FD9C6DCA /* Dino-Social-Media */ = {
+			isa = PBXGroup;
+			children = (
+				622673361E43D2E0E1789B24720DFFDF /* DinoSocialApp */,
+			);
+			name = "Dino-Social-Media";
+			path = "Dino-Social-Media";
 			sourceTree = "<group>";
 		};
 		CBEA2712A20442B5F1D7F23ED63E827C /* image_picker_ios */ = {
@@ -527,6 +517,15 @@
 			);
 			sourceTree = "<group>";
 		};
+		D1AE094914D6F2F9D13C37F0106552AD /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				D411EDBC290C269E72389663A16B8760 /* image_picker_ios */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,22 +534,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFA85F10CDE5222CFE68344994E55908 /* image_picker_ios */ = {
+		D411EDBC290C269E72389663A16B8760 /* image_picker_ios */ = {
 			isa = PBXGroup;
 			children = (
-				7881596ED50B0B0EB4651CCB61C9DEB9 /* Sources */,
+				A2B30D74406C2FCD936F66BAE0257CD1 /* Sources */,
 			);
 			name = image_picker_ios;
 			path = image_picker_ios;
 			sourceTree = "<group>";
 		};
-		DFFAAE9F9EB2628E07B7916D40D5F45F /* .. */ = {
+		D4B14617153019F082F3E3FA1B872875 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				0D519971EFCF3B6DE00758E0FF0CCA6E /* AndroidStudioProjects */,
+				CADEE4AA2BB3E6B3D7761A07FD9C6DCA /* Dino-Social-Media */,
 			);
-			name = ..;
-			path = .;
+			name = GitHub;
+			path = GitHub;
 			sourceTree = "<group>";
 		};
 		E18F60943856B099EA020D153FDABA7C /* Support Files */ = {
@@ -561,15 +560,6 @@
 			);
 			name = "Support Files";
 			path = "../Pods/Target Support Files/Flutter";
-			sourceTree = "<group>";
-		};
-		E1ED665F20E703AA23ED4B16A25D4CFD /* AndroidStudioProjects */ = {
-			isa = PBXGroup;
-			children = (
-				BD4CC8104A26D21FAC19B2F47F125C75 /* FluterProject */,
-			);
-			name = AndroidStudioProjects;
-			path = AndroidStudioProjects;
 			sourceTree = "<group>";
 		};
 		E1FE31D9DE58C38F6FCEA8205CFB65C2 /* Support Files */ = {
@@ -585,15 +575,6 @@
 			);
 			name = "Support Files";
 			path = "../../../../Pods/Target Support Files/image_picker_ios";
-			sourceTree = "<group>";
-		};
-		E46DA8097202EA8F5DE500001EA542A0 /* DinoSocialApp */ = {
-			isa = PBXGroup;
-			children = (
-				54C0AB432FEE68491601FB48A4C4F24C /* ios */,
-			);
-			name = DinoSocialApp;
-			path = DinoSocialApp;
 			sourceTree = "<group>";
 		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
@@ -622,13 +603,13 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		F0418B9F3F4BFB74292DFC727071B92E /* FluterProject */ = {
+		F1B1027389C1887403E68787279DE87D /* plugins */ = {
 			isa = PBXGroup;
 			children = (
-				E46DA8097202EA8F5DE500001EA542A0 /* DinoSocialApp */,
+				301EF2A7FA659E77D319C5C7C4B4B874 /* image_picker_ios */,
 			);
-			name = FluterProject;
-			path = FluterProject;
+			name = plugins;
+			path = plugins;
 			sourceTree = "<group>";
 		};
 		F368949882EDA1747B263F4EFD3AD06E /* .. */ = {
@@ -640,13 +621,32 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		FF348A25107A45A09AEE1A3E4F01156A /* plugins */ = {
+		F3AF37D6360329FB8B7D06435CDF11EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				55E87686828770B926FD43516AF2E03E /* image_picker_ios */,
+				2BA70A6D17E6C1D6251046C71F0E1829 /* image_picker_ios */,
 			);
-			name = plugins;
-			path = plugins;
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F598F413536C9940467BB816F356E6ED /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				88F53A08627E265F24B1603E522C3CDE /* .. */,
+				D4B14617153019F082F3E3FA1B872875 /* GitHub */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F72D2AB9723DDF9192912AC4C75B2148 /* DinoSocialApp */ = {
+			isa = PBXGroup;
+			children = (
+				C110DE72DCF52A3D71443520C366135D /* ios */,
+			);
+			name = DinoSocialApp;
+			path = DinoSocialApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

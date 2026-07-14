@@ -1,15 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:DinoSocialApp/widgets/post_card.dart';
 import '../data/dummy_data.dart';
 import '../models/post_model.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  bool _friendRequestSent = false;
+
+  void _toggleFriendRequest() {
+    setState(() {
+      _friendRequestSent = !_friendRequestSent;
+    });
+
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          _friendRequestSent
+              ? 'Đã gửi yêu cầu kết bạn tới Quang Thọt!'
+              : 'Đã hủy yêu cầu kết bạn.',
+        ),
+        behavior: SnackBarBehavior.floating,
+        duration: const Duration(seconds: 2),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     final user = dummyPosts[0]; // Use the first user for profile data
 
     return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC), // Modern soft background
       body: DefaultTabController(
         length: 3,
         child: NestedScrollView(
@@ -19,10 +47,18 @@ class ProfileScreen extends StatelessWidget {
                 expandedHeight: 400.0,
                 floating: false,
                 pinned: true,
+                backgroundColor: Colors.white,
+                elevation: 0,
+                iconTheme: const IconThemeData(color: Color(0xFF1E293B)),
                 flexibleSpace: FlexibleSpaceBar(
-                  background: _ProfileHeader(user: user),
+                  background: _buildHeaderSection(user),
                 ),
                 bottom: const TabBar(
+                  indicatorColor: Colors.deepOrange,
+                  indicatorWeight: 3.0,
+                  labelColor: Colors.deepOrange,
+                  labelStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 14.5),
+                  unselectedLabelColor: Color(0xFF64748B),
                   tabs: [
                     Tab(text: 'Bài viết'),
                     Tab(text: 'Giới thiệu'),
@@ -44,68 +80,245 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildHeaderSection(Post user) {
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        // Cover Photo
+        Positioned.fill(
+          bottom: 250, // Space for profile picture and name
+          child: Image.network(
+            'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop', // Placeholder
+            fit: BoxFit.cover,
+          ),
+        ),
+        // Camera icon over cover photo (bottom-right)
+        Positioned(
+          bottom: 262,
+          right: 12,
+          child: GestureDetector(
+            onTap: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Tính năng đăng tải ảnh bìa đang phát triển.'),
+                  behavior: SnackBarBehavior.floating,
+                ),
+              );
+            },
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: const BoxDecoration(
+                color: Colors.black54,
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.camera_alt_rounded, color: Colors.white, size: 18),
+            ),
+          ),
+        ),
+        // Profile Picture with floating camera icon
+        Positioned(
+          top: 150,
+          left: 10,
+          child: Stack(
+            alignment: Alignment.bottomRight,
+            children: [
+              CircleAvatar(
+                radius: 70,
+                backgroundColor: Colors.white,
+                child: CircleAvatar(
+                  radius: 65,
+                  backgroundImage: NetworkImage(user.avatarUrl),
+                ),
+              ),
+              Positioned(
+                bottom: 4,
+                right: 4,
+                child: GestureDetector(
+                  onTap: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Tính năng thay đổi ảnh đại diện đang phát triển.'),
+                        behavior: SnackBarBehavior.floating,
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(6),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF1F5F9), // Slate 100
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white, width: 2),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.15),
+                          blurRadius: 4,
+                          offset: const Offset(0, 2),
+                        )
+                      ],
+                    ),
+                    child: const Icon(Icons.camera_alt_rounded, color: Color(0xFF475569), size: 16),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        // User Name and Bio
+        Positioned(
+          top: 290,
+          left: 15,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                user.username,
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF1E293B),
+                ),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Hello, Quang Thọt. Rất vui được kết nối!',
+                style: TextStyle(fontSize: 14, color: Color(0xFF64748B), fontStyle: FontStyle.italic),
+              ),
+            ],
+          ),
+        ),
+        // Action Buttons
+        Positioned(
+          top: 350,
+          left: 16,
+          right: 16,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: ElevatedButton.icon(
+                  onPressed: _toggleFriendRequest,
+                  icon: Icon(_friendRequestSent ? Icons.check_rounded : Icons.person_add_rounded, size: 18),
+                  label: Text(_friendRequestSent ? 'Đã gửi yêu cầu' : 'Thêm bạn bè'),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: _friendRequestSent ? const Color(0xFF475569) : Colors.white,
+                    backgroundColor: _friendRequestSent ? const Color(0xFFE2E8F0) : Colors.deepOrange,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Tính năng nhắn tin đang được phát triển.'),
+                        behavior: SnackBarBehavior.floating,
+                      ),
+                    );
+                  },
+                  icon: const Icon(Icons.message_rounded, size: 18),
+                  label: const Text('Nhắn tin'),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: const Color(0xFF1E293B),
+                    backgroundColor: const Color(0xFFE2E8F0),
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              SizedBox(
+                width: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: const Color(0xFF1E293B),
+                    backgroundColor: const Color(0xFFE2E8F0),
+                    elevation: 0,
+                    padding: EdgeInsets.zero,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: const Icon(Icons.more_horiz_rounded),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _buildPostsTab(Post user) {
-    // Filter posts to show only the user's posts
     final userPosts = dummyPosts
         .where((post) => post.username == user.username)
         .toList();
 
     return ListView.builder(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(top: 8.0, bottom: 96.0), // Padding below list for tab bar
       itemCount: userPosts.length,
       itemBuilder: (context, index) {
-        return _PostCard(post: userPosts[index]);
+        return PostCard(post: userPosts[index]);
       },
     );
   }
 
   Widget _buildAboutTab(Post user) {
-    return const SingleChildScrollView(
-      padding: EdgeInsets.all(16.0),
+    return SingleChildScrollView(
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0, bottom: 96.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             'Giới thiệu',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 16),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.work),
-              title: Text('Làm việc tại Google'),
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF1E293B),
             ),
           ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.school),
-              title: Text('Đã học tại Đại học Bách khoa Hà Nội'),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Sống tại Hà Nội'),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.location_on),
-              title: Text('Đến từ Hà Nội'),
-            ),
-          ),
+          const SizedBox(height: 16),
+          _buildInfoCard(Icons.work_rounded, 'Làm việc tại Google'),
+          _buildInfoCard(Icons.school_rounded, 'Đã học tại Đại học Bách khoa Hà Nội'),
+          _buildInfoCard(Icons.home_rounded, 'Sống tại Hà Nội'),
+          _buildInfoCard(Icons.location_on_rounded, 'Đến từ Hà Nội'),
         ],
       ),
     );
   }
 
+  Widget _buildInfoCard(IconData icon, String text) {
+    return Card(
+      elevation: 0,
+      color: Colors.white,
+      margin: const EdgeInsets.symmetric(vertical: 6.0),
+      shape: RoundedRectangleBorder(
+        borderRadius: const BorderRadius.all(Radius.circular(14)),
+        side: BorderSide(color: Colors.grey.shade200),
+      ),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.deepOrange),
+        title: Text(
+          text,
+          style: const TextStyle(fontSize: 14.5, color: Color(0xFF334155), fontWeight: FontWeight.w500),
+        ),
+      ),
+    );
+  }
+
   Widget _buildFriendsTab() {
-    // Use a set to get unique users, excluding the main profile user
     final friends = dummyPosts.map((post) => post.username).toSet().toList();
     friends.remove(dummyPosts[0].username);
 
     return GridView.builder(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0, bottom: 96.0),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 12.0,
@@ -124,203 +337,6 @@ class ProfileScreen extends StatelessWidget {
   }
 }
 
-class _ProfileHeader extends StatelessWidget {
-  final Post user;
-
-  const _ProfileHeader({required this.user});
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        // Cover Photo
-        Positioned.fill(
-          bottom: 250, // Space for profile picture and name
-          child: Image.network(
-            'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop', // Placeholder
-            fit: BoxFit.cover,
-          ),
-        ),
-        // Profile Picture
-        Positioned(
-          top: 150,
-          left: 10,
-          child: CircleAvatar(
-            radius: 70,
-            backgroundColor: Colors.white,
-            child: CircleAvatar(
-              radius: 65,
-              backgroundImage: NetworkImage(user.avatarUrl),
-            ),
-          ),
-        ),
-        // User Name and Bio
-        Positioned(
-          top: 290,
-          left: 15,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                user.username,
-                style: const TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black87,
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Hello, Quang Thọt',
-                style: TextStyle(fontSize: 16, color: Colors.black54),
-              ),
-            ],
-          ),
-        ),
-        // Action Buttons
-        Positioned(
-          top: 350,
-          left: 16,
-          right: 16,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Expanded(
-                child: ElevatedButton.icon(
-                  onPressed: () {},
-                  icon: const Icon(Icons.person_add),
-                  label: const Text('Thêm bạn bè'),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.deepOrange,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: ElevatedButton.icon(
-                  onPressed: () {},
-                  icon: const Icon(Icons.message),
-                  label: const Text('Nhắn tin'),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black87,
-                    backgroundColor: Colors.grey[300],
-                  ),
-                ),
-              ),
-              const SizedBox(width: 10),
-              SizedBox(
-                width: 50,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Icon(Icons.more_horiz),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black87,
-                    backgroundColor: Colors.grey[300],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _PostCard extends StatelessWidget {
-  final Post post;
-
-  const _PostCard({required this.post});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 8.0),
-      elevation: 2.0,
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                CircleAvatar(backgroundImage: NetworkImage(post.avatarUrl)),
-                const SizedBox(width: 12),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      post.username,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      post.timeAgo,
-                      style: const TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            Text(post.content),
-            if (post.imageUrl != null) ...[
-              const SizedBox(height: 12),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: Image.network(post.imageUrl!),
-              ),
-            ],
-            const SizedBox(height: 12),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    const Icon(Icons.thumb_up, color: Colors.blue, size: 18),
-                    const SizedBox(width: 4),
-                    Text('${post.likes}'),
-                  ],
-                ),
-                Text('${post.comments} bình luận'),
-              ],
-            ),
-            const Divider(),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                _ActionButton(
-                  icon: Icons.thumb_up_alt_outlined,
-                  label: 'Thích',
-                ),
-                _ActionButton(icon: Icons.comment_outlined, label: 'Bình luận'),
-                _ActionButton(icon: Icons.share_outlined, label: 'Chia sẻ'),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _ActionButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _ActionButton({required this.icon, required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    return TextButton.icon(
-      onPressed: () {},
-      icon: Icon(icon, color: Colors.grey[600]),
-      label: Text(label, style: TextStyle(color: Colors.grey[700])),
-    );
-  }
-}
-
 class _FriendGridItem extends StatelessWidget {
   final String name;
   final String avatarUrl;
@@ -329,18 +345,36 @@ class _FriendGridItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 2.0,
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14.0),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.02),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(10.0),
         child: Row(
           children: [
-            CircleAvatar(backgroundImage: NetworkImage(avatarUrl)),
+            CircleAvatar(
+              radius: 18,
+              backgroundImage: NetworkImage(avatarUrl),
+            ),
             const SizedBox(width: 10),
             Expanded(
               child: Text(
                 name,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 13,
+                  color: Color(0xFF1E293B),
+                ),
                 overflow: TextOverflow.ellipsis,
               ),
             ),

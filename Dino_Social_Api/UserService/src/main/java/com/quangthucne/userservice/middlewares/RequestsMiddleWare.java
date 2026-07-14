@@ -45,6 +45,9 @@ public class RequestsMiddleWare extends OncePerRequestFilter {
             try {
                 id = jwtUtil.extractId(jwt);
                 String role = jwtUtil.extractRole(jwt);
+                if (role == null) {
+                    role = "ROLE_USER";
+                }
 
                 Optional<User> user = userRepo.findByIndentifier(id);
 

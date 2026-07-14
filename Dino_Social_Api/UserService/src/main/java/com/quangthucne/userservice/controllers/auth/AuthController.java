@@ -27,6 +27,7 @@ public class AuthController {
     @Autowired
     AuthService authService;
 
+
     @PostMapping("/login")
     public ResponseEntity<Response> login(@Validated(Login.class) @RequestBody AuthValid authValid) {
         Response response = new Response();

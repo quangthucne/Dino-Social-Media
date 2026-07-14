@@ -40,6 +40,9 @@
     <modules>
         <module>UserService</module>
         <module>Common</module>
+        <module>NotificationService</module>
+        <module>RabbitMQService</module>
+        <module>PostService</module>
     </modules>
 
 </project>

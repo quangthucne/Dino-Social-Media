@@ -81,7 +81,10 @@ public class SecurityConfig {
                                 "/ws/**", // Hỗ trợ các endpoint WebSocket khác
                                 "/topic/**", // Các topic public
                                 "/app/**", // Các destination prefix
-                                "/auth/**" // Cho phép truy cập các endpoint xác thực mà không cần auth
+                                "/auth/**", // Cho phép truy cập các endpoint xác thực mà không cần auth
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**",
+                                "/swagger-ui.html"
                         ).permitAll()
                         .anyRequest().permitAll() // Cho phép tất cả các yêu cầu khác (có thể thắt chặt sau)
                 )
@@ -96,8 +99,9 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("*")); // Cho phép tất cả các origin, có thể cần cụ thể hơn trong
-                                                       // production
+        configuration.setAllowedOrigins(List.of("http://localhost:3000")); // Cho phép tất cả các origin, có thể
+                                                                           // cần cụ thể hơn trong
+        // production
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Cache-Control", "Content-Type"));
         configuration.setAllowCredentials(true);

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		43B7FJa+tvpnt2I0Jn2gnbLgR94=
+		uhbaMgiyQKIGapFTyJQgX6UNyOA=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		HWGTgixw3hRe/Td28V/51yREZlA=
+		aW+eOPAUp0LTApdnlDdOd2kAe1Y=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		6k8QdnJoYO//PqWVDzZQb96FEnA=
+		m92OBNryzHMuawuha8ICM2yQd3U=
 		</data>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		T+eZ9tPosv3zVQZn+dW9/MZWiBY=
+		9DPqY9NxXFvIh/LpVyDRS2Pl97I=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -56,6 +56,22 @@
 		<data>
 		eAqP8W67aB+F1dMPrJTr6EWhK14=
 		</data>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_arbitrary.frag</key>
+		<data>
+		kPJclPW8mUdfe9oFwpqsCepxQBA=
+		</data>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_filter.frag</key>
+		<data>
+		ztdcvYhSBxGvoIGsd7xr97yYZM8=
+		</data>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_final_render.frag</key>
+		<data>
+		i4rWhmRxKIqp5kaVCSTh2b6tStU=
+		</data>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_geometry_blended.frag</key>
+		<data>
+		aNLIJizVlggTzGJtZbT9oYegQLY=
+		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
 		VvTF10G1gIeea4aI0DhJjCjHgXQ=
@@ -71,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iLs3cSVBJzgbBduM7MSWmSMA8f67QSB8W1RXIG/hWwY=
+			5WUZW3KE4vXDUmJMyw8ARQvYzCGd1x+R9KlF5e3041Y=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nf4MKSrvgh69eN7LpdiHt8ClTnRT++QEdKMm4vQOmT0=
+			uRjTmnS2yRXiJE/GVL51xMWkMEUkwy4pP4yP2NcAVsg=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -92,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qESgtVuospxhvAsk+UFsL7TXeo1tuQOpGmkgHJcmkk=
+			xlJ156J1hXouf3mj5rrNhB23X+gwP9pdydOdtgsaAEg=
 			</data>
 		</dict>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
@@ -120,7 +136,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ycScUhTO9P5d7ZzYCIBwjSLl2AW8BAFv0TA+mNMwMkY=
+			sfemT2dVp0C73SRyfX6yPqddyabOXNCEfayQBLlWTMk=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -149,6 +165,34 @@
 			<key>hash2</key>
 			<data>
 			0vBZNUCw4zum3iVaVPJy1GbjEUSAaVa+qM/b9+3/yb0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_arbitrary.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bm50RstuI5o8ykX/nUwdqjEOlO4osq9bWpwj52h3SE0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_filter.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o+laob6kFbelOT9b9JYGeUrz3rZDDUkNo9TDSvvKofs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_final_render.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YSsP0pOYvQFOhBrXC0QtJTAfNsZh8aEoSIgr3D78ljY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/liquid_glass_renderer/lib/assets/shaders/liquid_glass_geometry_blended.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YBYK9OSN/pcIab8amfdEONE+JOsixdYP4WHQkJzOuTQ=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
