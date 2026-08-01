@@ -4,6 +4,8 @@ import 'package:DinoSocialApp/post/post_create_screen.dart';
 import 'package:DinoSocialApp/widgets/post_card.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:DinoSocialApp/screens/messenger_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   final ScrollController controller;
   const HomeScreen({super.key, required this.controller});
@@ -34,7 +36,12 @@ class HomeScreen extends StatelessWidget {
               FontAwesomeIcons.facebookMessenger,
               color: Color(0xFF1E293B),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MessengerScreen()),
+              );
+            },
           ),
         ],
       ),

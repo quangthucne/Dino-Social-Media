@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:DinoSocialApp/utils/session_manager.dart';
+import 'package:DinoSocialApp/screens/chat_screen.dart';
 import 'package:DinoSocialApp/widgets/post_card.dart';
 import '../data/dummy_data.dart';
 import '../models/post_model.dart';
@@ -212,13 +216,99 @@ class _ProfileScreenState extends State<ProfileScreen> {
               const SizedBox(width: 12),
               Expanded(
                 child: ElevatedButton.icon(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Tính năng nhắn tin đang được phát triển.'),
-                        behavior: SnackBarBehavior.floating,
+                  onPressed: () async {
+                    showDialog(
+                      context: context,
+                      barrierDismissible: false,
+                      builder: (context) => const Center(
+                        child: CircularProgressIndicator(color: Colors.deepOrange),
                       ),
                     );
+
+                    try {
+                      String? targetId;
+                      final searchUrl = '${SessionManager.baseUrl}/users/search?q=${user.username}';
+                      final searchRes = await http.get(Uri.parse(searchUrl), headers: SessionManager.getHeaders());
+                      
+                      if (searchRes.statusCode == 200) {
+                        final searchData = jsonDecode(searchRes.body);
+                        if (searchData['data'] != null && (searchData['data'] as List).isNotEmpty) {
+                          targetId = searchData['data'][0]['id'];
+                        }
+                      }
+
+                      if (targetId == null) {
+                        final usersRes = await http.get(
+                          Uri.parse('${SessionManager.baseUrl}/users'),
+                          headers: SessionManager.getHeaders(),
+                        );
+                        if (usersRes.statusCode == 200) {
+                          final usersData = jsonDecode(usersRes.body);
+                          if (usersData != null && usersData is List) {
+                            final otherUser = usersData.firstWhere(
+                              (u) => u['id'] != SessionManager.userId,
+                              orElse: () => null,
+                            );
+                            if (otherUser != null) {
+                              targetId = otherUser['id'];
+                            }
+                          }
+                        }
+                      }
+
+                      if (targetId == null) {
+                        if (mounted) {
+                          Navigator.pop(context);
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('Không tìm thấy người dùng hợp lệ để nhắn tin')),
+                          );
+                        }
+                        return;
+                      }
+
+                      final convRes = await http.post(
+                        Uri.parse('${SessionManager.baseUrl}/messages/conversations'),
+                        headers: SessionManager.getHeaders(),
+                        body: jsonEncode({'targetUserId': targetId}),
+                      );
+
+                      if (mounted) {
+                        Navigator.pop(context);
+                      }
+
+                      if (convRes.statusCode == 200) {
+                        final convData = jsonDecode(convRes.body);
+                        if (convData['data'] != null && mounted) {
+                          final conv = convData['data'];
+                          final String title = conv['name'] ?? user.username;
+                          final String? avatar = conv['avatarUrl'];
+
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ChatScreen(
+                                conversationId: conv['id'],
+                                title: title,
+                                avatarUrl: avatar,
+                              ),
+                            ),
+                          );
+                        }
+                      } else {
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('Lỗi khi tạo cuộc trò chuyện với người dùng')),
+                          );
+                        }
+                      }
+                    } catch (e) {
+                      if (mounted) {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Lỗi kết nối máy chủ: $e')),
+                        );
+                      }
+                    }
                   },
                   icon: const Icon(Icons.message_rounded, size: 18),
                   label: const Text('Nhắn tin'),

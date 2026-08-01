@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:DinoSocialApp/widgets/main_layout.dart';
 import 'package:DinoSocialApp/widgets/liquid_glass_renderer.dart';
+import 'package:DinoSocialApp/utils/session_manager.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -49,6 +50,26 @@ class _LoginScreenState extends State<LoginScreen> {
       ).timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        if (data['data'] != null) {
+          SessionManager.token = data['data']['token'];
+        }
+
+        // Fetch current user details
+        final meResponse = await http.get(
+          Uri.parse('http://$host:8080/api/users/me'),
+          headers: SessionManager.getHeaders(),
+        ).timeout(const Duration(seconds: 5));
+
+        if (meResponse.statusCode == 200) {
+          final meData = jsonDecode(meResponse.body);
+          if (meData['data'] != null) {
+            SessionManager.userId = meData['data']['id'];
+            SessionManager.username = meData['data']['username'];
+            SessionManager.avatarUrl = meData['data']['profilePictureUrl'];
+          }
+        }
+
         if (mounted) {
           Navigator.pushReplacement(
             context,
@@ -137,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     const SizedBox(height: 24.0),
                     const Text(
-                      'Dino Social App',
+                      'Dino Social',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
@@ -164,14 +185,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Đăng Nhập',
-                            style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
                           const SizedBox(height: 20),
                           TextFormField(
                             controller: _identifierController,
